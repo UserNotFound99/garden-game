@@ -115,6 +115,7 @@ public class Plot : MonoBehaviour
             if (--mods[i].uses <= 0)
             {
                 Destroy(mods[i].gameObject);
+                mods.RemoveAt(i);
             }
         }
         return Mathf.RoundToInt((garden.addReward + x) * garden.multReward);

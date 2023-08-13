@@ -14,4 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   packets:
   - {fileID: 1876712177456974792, guid: edf5b9f0f425dfe48b40c8caf7f38b22, type: 3}
-  probs: 00000000
+  - {fileID: 1876712177456974792, guid: 396e076c4faf6c24083cc39fcdf79fad, type: 3}
+  - {fileID: 195607424968444392, guid: 8f4683418336b314dbd604ca8bb1f3f4, type: 3}
+  - {fileID: 1876712177456974792, guid: 3ae00b3f1758ed74b8791ef995f8dbbd, type: 3}
+  - {fileID: 195607424968444392, guid: cd8192f1c5e329144b058f4968bd6fc5, type: 3}
+  probs: 000000000c00000000000000000000000c000000
+  multiplier: 1

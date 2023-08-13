@@ -27,7 +27,7 @@ public class BoxAnimation : MonoBehaviour
         {
             garden.actionsAllowed = true;
             CoordPair c = garden.getRandomPlot();
-            garden.allPlots[c.x][c.y].addPlant(plant);
+            if (c != null) garden.allPlots[c.x][c.y].addPlant(plant);
             Destroy(gameObject);
         }
         else if (countdown <= thresh)

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1876712177456974792}
   - component: {fileID: 172583999106932485}
   m_Layer: 0
-  m_Name: CorpseFlowerPacket
+  m_Name: CorpsebloomPacket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cc95c6c8a5c4624b8cba85bdb2c35f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plant: {fileID: 1721307147175860082, guid: c077e126470d80a4589675e6ef28eb13, type: 3}
+  plant: {fileID: 1721307147175860082, guid: 005630335b235734fb09e66923313cc5, type: 3}
 --- !u!61 &172583999106932485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 3, y: 3}
     newSize: {x: 3.01, y: 2.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -60,6 +60,9 @@ public class Market : MonoBehaviour
 
     public void AddPackets()
     {
+        int numMissing = 0;
+        for (int i = 0; i < slots; i++) if (!cMarket[i]) numMissing++;
+
         List<Packet> mustPackets = new List<Packet>();
         for(int i = qPackets.Count - 1; i >= 0; --i){
             qPackets[i] = new FuturePacket(qPackets[i].turns -1 , qPackets[i].packet);
@@ -68,6 +71,7 @@ public class Market : MonoBehaviour
                 mustPackets.Add(qPackets[i].packet);
                 qPackets.RemoveAt(i);
             }
+            if (mustPackets.Count >= numMissing) break;
         }
         
 
@@ -94,15 +98,15 @@ public class Market : MonoBehaviour
 
     private Packet GetNewPacket()
     {
-        int totalChance = addedPlants.getTotalChance();
+        int totalChance = addedPlants.getTotalChance() * addedPlants.multiplier;
         foreach (PlantList pl in stagePlants)
         {
-            totalChance += pl.getTotalChance();
+            totalChance += pl.getTotalChance() * pl.multiplier;
         }
         int n = Random.Range(0, totalChance);
         foreach (PlantList pl in stagePlants)
         {
-            n -= pl.totalChance;
+            n -= pl.totalChance * pl.multiplier;
             if (n < 0) return pl.GetPacket();
         }
         return addedPlants.GetPacket();

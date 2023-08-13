@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8204827507271469030}
   - component: {fileID: 8204827507271469031}
-  - component: {fileID: 8530053234731553763}
-  - component: {fileID: -7599964776432893510}
+  - component: {fileID: -6847444878409238190}
   m_Layer: 0
   m_Name: Lurchweed
   m_TagString: Untagged
@@ -88,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8530053234731553763
+--- !u!114 &-6847444878409238190
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +96,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8204827507271469025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27ec6e9f5e495974b914d239944cee2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ef72cea5bdb9a44bb5d047d8a4ac6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxTurns: 2
@@ -110,23 +109,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
   - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
   - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
-  forcePacket: {fileID: 1876712177456974792, guid: 396e076c4faf6c24083cc39fcdf79fad, type: 3}
-  forceAfterTurns: 2
-  hasCorpse: 1
---- !u!114 &-7599964776432893510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8204827507271469025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8832e5d42112b704ca58ee92a763a747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSwitch: 0
-  endSwitch: 1
+  addPacket: {fileID: 0}
+  addAfterTurns: 2
+  numCorpses: 1
+  isUndead: 1
 --- !u!1001 &4582533939671048847
 PrefabInstance:
   m_ObjectHideFlags: 0

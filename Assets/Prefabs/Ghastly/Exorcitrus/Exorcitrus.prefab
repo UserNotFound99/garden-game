@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8204827507271469030}
   - component: {fileID: 8204827507271469031}
-  - component: {fileID: 1721307147175860082}
-  - component: {fileID: -7599964776432893510}
+  - component: {fileID: -4527528636838537521}
   m_Layer: 0
-  m_Name: CorpseFlower
+  m_Name: Exorcitrus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1721307147175860082
+--- !u!114 &-4527528636838537521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,38 +96,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 8204827507271469025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef72cea5bdb9a44bb5d047d8a4ac6f2, type: 3}
+  m_Script: {fileID: 11500000, guid: fcff0d2c9490a1d4dad8acd3d2019c84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTurns: 4
+  maxTurns: 3
   currentTurns: 0
-  reward: 0
+  reward: 2
   ready: 0
-  infoPrefab: {fileID: 4837329490825092174, guid: ea2d53a1ba619f34f9a4b30da12bd699, type: 3}
-  icon: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  infoPrefab: {fileID: 6741274661332514408, guid: 5934c5557d5e22043b661659373a1fa0, type: 3}
+  icon: {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
   allSprites:
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  addPacket: {fileID: 0}
+  - {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
+  - {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
+  - {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
+  - {fileID: 21300000, guid: 2510379f939e48041a786f9fdb77285f, type: 3}
+  addPacket: {fileID: 195607424968444392, guid: cd8192f1c5e329144b058f4968bd6fc5, type: 3}
   addAfterTurns: -1
-  numCorpses: 1
---- !u!114 &-7599964776432893510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8204827507271469025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8832e5d42112b704ca58ee92a763a747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSwitch: 0
-  endSwitch: 1
+  numCorpses: 0
+  isUndead: 0
 --- !u!1001 &4582533939671048847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,6 +125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InfoLabel
       objectReference: {fileID: 0}
+    - target: {fileID: 3151915889493551250, guid: 0e27b242cb442064cb7286e43d714b5c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8062ae8bc4e37245ae8b17e437c9559, type: 3}
     - target: {fileID: 8676908744705762287, guid: 0e27b242cb442064cb7286e43d714b5c, type: 3}
       propertyPath: m_RootOrder
       value: 1

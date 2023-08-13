@@ -23,13 +23,7 @@ public class Plant : MonoBehaviour
 
     [SerializeField] public List<Sprite> allSprites;
 
-    [Header("Other Attributes")]
-
-    // for adding packet back to shop (used for recurring)
-    [SerializeField] Packet forcePacket;
-    [SerializeField] int forceAfterTurns = -1;
-
-    [SerializeField] bool hasCorpse;
+    
 
 
 
@@ -38,7 +32,7 @@ public class Plant : MonoBehaviour
     [System.NonSerialized] public ProgressBar progressBar;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         if (turnsLeft) turnsLeft.text = maxTurns.ToString();
         if (allSprites.Count != (maxTurns + 1) % 999) print("Incorrect sprite count!");
@@ -95,8 +89,6 @@ public class Plant : MonoBehaviour
     public virtual void Harvest()
     {
         plot.garden.addCoins(plot.calcReward(reward));
-        if (hasCorpse) plot.garden.addCorpses(1);
-        if (forceAfterTurns > 0 && forcePacket) plot.garden.market.addFuturePacket(forcePacket, forceAfterTurns);
         DestroyPlant();
     }
 

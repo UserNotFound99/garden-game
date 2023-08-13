@@ -220,6 +220,11 @@ public class Garden : MonoBehaviour
         else if (!on && searchResult >= 0) market.removePlantList(searchResult);
     }
 
+    public int findListIndex(string name)
+    {
+        return seasonNames.FindIndex(str => str==name);
+    }
+
     //activates turn end, then harvests & refreshes market
     public IEnumerator endTurn()
     {

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1721307147175860082}
   - component: {fileID: -7599964776432893510}
   m_Layer: 0
-  m_Name: CorpseFlower
+  m_Name: Corpsebloom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,16 +105,16 @@ MonoBehaviour:
   reward: 0
   ready: 0
   infoPrefab: {fileID: 4837329490825092174, guid: ea2d53a1ba619f34f9a4b30da12bd699, type: 3}
-  icon: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  icon: {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
   allSprites:
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
+  - {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
+  - {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
+  - {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
+  - {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
+  - {fileID: 21300000, guid: f66c8f7383d661f4bb18041aef2b2c54, type: 3}
   addPacket: {fileID: 0}
   addAfterTurns: -1
-  numCorpses: 1
+  numCorpses: 4
 --- !u!114 &-7599964776432893510
 MonoBehaviour:
   m_ObjectHideFlags: 0

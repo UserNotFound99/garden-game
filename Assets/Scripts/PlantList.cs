@@ -20,6 +20,7 @@ public class PlantList : ScriptableObject
 {
     [SerializeField] public List<Packet> packets = new List<Packet>();
     [SerializeField] public List<int> probs = new List<int>();
+    [SerializeField] public int multiplier = 1;
     List<packetProb> probTable = new List<packetProb>();
     [System.NonSerialized] public int totalChance = 0;
     [System.NonSerialized] public bool started = false;
@@ -77,6 +78,6 @@ public class PlantList : ScriptableObject
         }
         if (odds < 0) throw new System.Exception("Trying to remove packet odds that don't exist!");
         probTable.Add(new packetProb(p, odds));
-        totalChance += odds;
+        totalChance += odds * multiplier;
     }
 }
