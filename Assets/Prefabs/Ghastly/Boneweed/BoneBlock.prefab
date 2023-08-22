@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8204827507271469030}
   - component: {fileID: 8204827507271469031}
-  - component: {fileID: -6847444878409238190}
+  - component: {fileID: 8168315449689355252}
   m_Layer: 0
-  m_Name: Lurchweed
+  m_Name: BoneBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-6847444878409238190
+--- !u!114 &8168315449689355252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,19 +99,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef72cea5bdb9a44bb5d047d8a4ac6f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTurns: 2
+  maxTurns: 6
   currentTurns: 0
-  reward: -2
+  reward: 0
   ready: 0
-  infoPrefab: {fileID: 4837329490825092174, guid: e38050d429e3b1c4f914b32a804543ad, type: 3}
-  icon: {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
+  infoPrefab: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
   allSprites:
-  - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
-  - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
-  - {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
+  - {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
   addPacket: {fileID: 0}
-  addAfterTurns: 2
-  numCorpses: -1
+  addAfterTurns: -1
+  numCorpses: 0
   isUndead: 1
 --- !u!1001 &4582533939671048847
 PrefabInstance:
@@ -127,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 3151915889493551250, guid: 0e27b242cb442064cb7286e43d714b5c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3c419bca0d2405b499b7eb9c3f123893, type: 3}
+      objectReference: {fileID: 21300000, guid: 6d1d7733ae3adfb4c8ade32fde8d5d95, type: 3}
     - target: {fileID: 8676908744705762287, guid: 0e27b242cb442064cb7286e43d714b5c, type: 3}
       propertyPath: m_RootOrder
       value: 1

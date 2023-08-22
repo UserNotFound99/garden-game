@@ -11,13 +11,13 @@ public class GhastlyPlant : Plant {
     [SerializeField] int numCorpses = 0;
     [SerializeField] bool isUndead = false;
 
-    bool exorcised = false;
+    protected bool exorcised = false;
 
     public override void Harvest()
     {
         if (!exorcised)
         {
-            plot.garden.addCorpses(numCorpses);
+            if (plot.garden.corpses != 0) plot.garden.addCorpses(numCorpses);
             if (addAfterTurns > 0 && addPacket) plot.garden.market.addFuturePacket(addPacket, addAfterTurns);
             base.Harvest();
         }
@@ -33,5 +33,10 @@ public class GhastlyPlant : Plant {
         {
             exorcised = true;
         }
+    }
+
+    public bool getUndead()
+    {
+        return isUndead;
     }
 }

@@ -5218,7 +5218,7 @@ MonoBehaviour:
   repeatable: 1
   boxAnimation: {fileID: 3197471577405851960, guid: aac65f64e4149c8488e3912c3776ca61, type: 3}
   plants:
-  - {fileID: 1721307147175860082, guid: c077e126470d80a4589675e6ef28eb13, type: 3}
+  - {fileID: 2457509201889192267, guid: c077e126470d80a4589675e6ef28eb13, type: 3}
 --- !u!1001 &3614855365813230661
 PrefabInstance:
   m_ObjectHideFlags: 0

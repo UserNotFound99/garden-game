@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8204827507271469030}
   - component: {fileID: 8204827507271469031}
-  - component: {fileID: 1721307147175860082}
-  - component: {fileID: -7599964776432893510}
+  - component: {fileID: 2457509201889192267}
   m_Layer: 0
   m_Name: CorpseFlower
   m_TagString: Untagged
@@ -88,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1721307147175860082
+--- !u!114 &2457509201889192267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,12 +96,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8204827507271469025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef72cea5bdb9a44bb5d047d8a4ac6f2, type: 3}
+  m_Script: {fileID: 11500000, guid: de74b8533fa6897488bc8f1a90ad79b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTurns: 4
+  maxTurns: 2
   currentTurns: 0
-  reward: 0
+  reward: 13
   ready: 0
   infoPrefab: {fileID: 4837329490825092174, guid: ea2d53a1ba619f34f9a4b30da12bd699, type: 3}
   icon: {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
@@ -110,25 +109,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
   - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
   - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  - {fileID: 21300000, guid: eeba012d26f4beb4a8bef5cbd1a83076, type: 3}
-  addPacket: {fileID: 0}
-  addAfterTurns: -1
-  numCorpses: 1
---- !u!114 &-7599964776432893510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8204827507271469025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8832e5d42112b704ca58ee92a763a747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSwitch: 0
-  endSwitch: 1
+  seasonNum: 1
+  initialCorpses: 30
+  message: The dead rise...
 --- !u!1001 &4582533939671048847
 PrefabInstance:
   m_ObjectHideFlags: 0

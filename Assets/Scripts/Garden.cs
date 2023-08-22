@@ -193,6 +193,11 @@ public class Garden : MonoBehaviour
     {
         corpses += _corpses;
         corpseText.transform.parent.gameObject.SetActive(corpses > 0);
+        if (corpses <= 0)
+        {
+            setList(findListIndex("Ghastly"), corpses > 0);
+            print("The dead wither away once more...");
+        }
         corpseText.text = corpses.ToString();
     }
 
