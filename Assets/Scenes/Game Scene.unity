@@ -342,7 +342,7 @@ MonoBehaviour:
   selectorPrefab: {fileID: 1090046528204287285, guid: c308f7fde5867fb42b74847f497077a1, type: 3}
   lockerPrefab: {fileID: 1472155824095883693, guid: ab793e6c77ba02d468f88d8f1a5e481c, type: 3}
   stagePlants:
-  - {fileID: 11400000, guid: 503622e6a13e6db418c52cea28572409, type: 2}
+  - {fileID: 11400000, guid: 09a8e011ff12975439c58ff742d2cc17, type: 2}
   addedPlants: {fileID: 0}
   infoX: -3.5
   infoYMin: -2
@@ -3502,6 +3502,7 @@ MonoBehaviour:
   lists:
   - {fileID: 11400000, guid: 09a8e011ff12975439c58ff742d2cc17, type: 2}
   - {fileID: 11400000, guid: 7b517d09f8248e34694024d80b6a2e1c, type: 2}
+  - {fileID: 11400000, guid: 7919c98b4844ca94ca830b40a346e15c, type: 2}
 --- !u!82 &1690369463
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5218,7 +5219,7 @@ MonoBehaviour:
   repeatable: 1
   boxAnimation: {fileID: 3197471577405851960, guid: aac65f64e4149c8488e3912c3776ca61, type: 3}
   plants:
-  - {fileID: 2457509201889192267, guid: c077e126470d80a4589675e6ef28eb13, type: 3}
+  - {fileID: -19358975235017682, guid: 334ec31043dd6ee42bfffc46d24eb8c0, type: 3}
 --- !u!1001 &3614855365813230661
 PrefabInstance:
   m_ObjectHideFlags: 0

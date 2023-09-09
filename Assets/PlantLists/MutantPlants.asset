@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4e59d05200e6134797274775a396824, type: 3}
-  m_Name: StarterPlants
+  m_Name: MutantPlants
   m_EditorClassIdentifier: 
   packets:
-  - {fileID: 1876712177456974792, guid: 2c5d92d328607914b89f864c03af4d73, type: 3}
-  - {fileID: 1876712177456974792, guid: dff5c3868e5b62e41841c2977e7fe2ec, type: 3}
-  - {fileID: 195607424968444392, guid: 6e9433b137c1eeb429244d2a19979fd0, type: 3}
-  probs: 030000000300000003000000
+  - {fileID: 195607424968444392, guid: 3ac672154c8a7f54a8d2319ee851ed3a, type: 3}
+  probs: 3c000000
   multiplier: 1

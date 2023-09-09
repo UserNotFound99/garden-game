@@ -18,6 +18,6 @@ public class CorpseFlower : Plant
 
     private void OnDestroy()
     {
-        plot.garden.setList(seasonNum, true);
+
     }
 }

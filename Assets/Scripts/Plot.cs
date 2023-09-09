@@ -30,21 +30,36 @@ public class Plot : MonoBehaviour
         if (!garden.actionsAllowed) return;
         if (Input.GetMouseButtonDown(0))
         {
-            if (!plant)
+            if (garden.market.GetPlant(true) is GraftPlant)
             {
-                var plantedPlant = garden.market.GetPlant();
-                if (!plantedPlant) return;
-                addPlant(plantedPlant);
-                garden.numPlanted++;
+                if (!plant) return;
+                else if (plant.ready) plant.Harvest();
+                else
+                {
+                    GraftPlant graftedPlant = (GraftPlant)garden.market.GetPlant();
+                    if (!graftedPlant) return;
+                    plant.AddEffect(graftedPlant.getEffect());
+                    garden.numPlanted++;
+                }
             }
             else
             {
-                if (plant.ready) plant.Harvest();
+                if (!plant)
+                {
+                    var plantedPlant = garden.market.GetPlant();
+                    if (!plantedPlant) return;
+                    addPlant(plantedPlant);
+                    garden.numPlanted++;
+                }
+                else
+                {
+                    if (plant.ready) plant.Harvest();
+                }
             }
         }
         if (Input.GetMouseButtonDown(1))
         {
-            if (garden.shovelsLeft > 0)
+            if (plant && garden.shovelsLeft > 0 && plant.destructible)
             {
                 plant.DestroyPlant();
                 //garden.addCoins(-garden.shovelPrice);

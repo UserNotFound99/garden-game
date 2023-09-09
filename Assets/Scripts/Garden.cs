@@ -95,7 +95,7 @@ public class Garden : MonoBehaviour
         return (coords.x >= 0 && coords.x < gardenWidth && coords.y >= 0 && coords.y < gardenHeight);
     }
 
-    public List<CoordPair> getNeighbors(CoordPair coords, bool occupied)
+    public List<CoordPair> getNeighbors(CoordPair coords, bool occupied, bool destructibleOnly = false)
     {
         List<CoordPair> possible = new List<CoordPair>
         {
@@ -119,6 +119,10 @@ public class Garden : MonoBehaviour
             {
                 possible.Remove(possible[i]);
             }
+            else if (occupied && destructibleOnly && !allPlots[possible[i].y][possible[i].x].plant.destructible)
+            {
+                possible.Remove(possible[i]);
+            }
             else
             {
                 ++i;
@@ -128,7 +132,7 @@ public class Garden : MonoBehaviour
         return possible;
     }
 
-    public List<CoordPair> getAdjacent(CoordPair coords, bool occupied)
+    public List<CoordPair> getAdjacent(CoordPair coords, bool occupied, bool destructibleOnly = false)
     {
         List<CoordPair> possible = new List<CoordPair>
         {
@@ -145,6 +149,10 @@ public class Garden : MonoBehaviour
                 possible.Remove(possible[i]);
             }
             else if (occupied == !allPlots[possible[i].y][possible[i].x].plant)
+            {
+                possible.Remove(possible[i]);
+            }
+            else if (occupied && destructibleOnly && !allPlots[possible[i].y][possible[i].x].plant.destructible)
             {
                 possible.Remove(possible[i]);
             }

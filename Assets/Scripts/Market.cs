@@ -122,12 +122,15 @@ public class Market : MonoBehaviour
     }
 
 
-    public Plant GetPlant()
+    public Plant GetPlant(bool view = false)
     {
         if (selectedSlot < 0 || !cMarket[selectedSlot]) return null;
         var plant = cMarket[selectedSlot].plant;
-        Destroy(cMarket[selectedSlot].gameObject);
-        selectPlant(-1);
+        if (!view)
+        {
+            Destroy(cMarket[selectedSlot].gameObject);
+            selectPlant(-1);
+        }
         return plant;
     }
 
