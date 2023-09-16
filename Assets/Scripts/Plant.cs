@@ -49,9 +49,15 @@ public class Plant : MonoBehaviour
 
     }
 
-    public virtual void TurnStart()
+    public virtual IEnumerator TurnStart()
     {
-        foreach (Effect e in allEffects) e.TurnStart();
+        foreach (Effect e in allEffects)
+        {
+            e.TurnStart();
+            yield return new WaitForSeconds(0.03f);
+            
+        }
+        yield return null;
     }
     public virtual void OnPlant()
     {
@@ -59,7 +65,7 @@ public class Plant : MonoBehaviour
     }
     public virtual void Grow()
     {
-        for (int i = 0; i < plot.calcGrow() * getEffectProduct(); i++)
+        for (int i = 0; i < plot.calcGrow(); i++)
         {
             foreach (Effect e in allEffects) e.OnGrow();
             if (maxTurns < 999)
@@ -85,16 +91,6 @@ public class Plant : MonoBehaviour
         }
     }
 
-    private int getEffectProduct()
-    {
-        float x = 1;
-        /*
-        for (int i = 0; i < allEffects.Count; i++)
-        {
-            x += allEffects[i].bonusSpeed;
-        }*/
-        return Mathf.RoundToInt(x);
-    }
     public virtual void AddEffect(Effect e)
     {
         allEffects.Add(e);

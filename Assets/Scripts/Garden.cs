@@ -181,7 +181,7 @@ public class Garden : MonoBehaviour
                 if (col != -1 && col != j) continue;
                 if (hasMod == 0 && allPlots[i][j].mods.Count > 0) continue;
                 if (hasMod == 1 && allPlots[i][j].mods.Count == 0) continue;
-                if ((bool) allPlots[i][j].plant == (hasPlant == 1) || hasPlant == -1) possible.Add(new CoordPair(i, j));
+                if ((bool) allPlots[i][j].plant == (hasPlant == 1) || hasPlant == -1) possible.Add(new CoordPair(j, i));
             }
         }
         if (possible.Count > 0)

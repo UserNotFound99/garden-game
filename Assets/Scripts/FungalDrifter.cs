@@ -27,9 +27,10 @@ public class FungalDrifter : Plant
         }
     }
 
-    public override void TurnStart()
+    public override IEnumerator TurnStart()
     {
         moved = false;
+        yield return null;
     }
     public override void OnPlant()
     {

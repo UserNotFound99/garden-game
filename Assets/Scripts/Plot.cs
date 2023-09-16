@@ -105,7 +105,7 @@ public class Plot : MonoBehaviour
     public void StartTurn()
     {
         if (plant)
-            plant.TurnStart();
+            StartCoroutine(plant.TurnStart());
     }
     public void GrowPlant()
     {

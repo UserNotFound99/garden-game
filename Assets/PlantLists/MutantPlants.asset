@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   packets:
   - {fileID: 195607424968444392, guid: 3ac672154c8a7f54a8d2319ee851ed3a, type: 3}
-  probs: 3c000000
+  - {fileID: 195607424968444392, guid: 1e9880f68ee33254ba918c279fc8a39f, type: 3}
+  - {fileID: 195607424968444392, guid: 29fc8bde8715c634596c9b69983406ab, type: 3}
+  probs: 03000000030000001e000000
   multiplier: 1

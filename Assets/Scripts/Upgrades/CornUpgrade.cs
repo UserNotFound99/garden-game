@@ -11,7 +11,7 @@ public class CornUpgrade : Upgrade
         for (int i = 0; i < tab.garden.allPlots.Count; i++)
         {
             CoordPair c = tab.garden.getRandomPlot(i);
-            if (c.x != -1) tab.garden.allPlots[c.x][c.y].addPlant(plant);
+            if (c.x != -1) tab.garden.allPlots[c.y][c.x].addPlant(plant);
         }
     }
 }

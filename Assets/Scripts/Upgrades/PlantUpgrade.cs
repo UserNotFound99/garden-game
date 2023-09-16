@@ -13,7 +13,7 @@ public class PlantUpgrade : Upgrade
         for (int i = 0; i < plantNum; i++)
         {
             CoordPair c = tab.garden.getRandomPlot();
-            if (c.x != -1) tab.garden.allPlots[c.x][c.y].addPlant(plants[Random.Range(0, plants.Count)]);
+            if (c.x != -1) tab.garden.allPlots[c.y][c.x].addPlant(plants[Random.Range(0, plants.Count)]);
             else return;
             if (planted) tab.garden.numPlanted = 1;
         }

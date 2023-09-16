@@ -13,8 +13,8 @@ public class FertilizerUpgrade : Upgrade
         {
             CoordPair c = tab.garden.getRandomPlot(hasPlant:-1, hasMod: 0);
             if (c.x == -1) return;
-            Plot p = tab.garden.allPlots[c.x][c.y];
-            tab.garden.allPlots[c.x][c.y].addMod(mod);
+            Plot p = tab.garden.allPlots[c.y][c.x];
+            tab.garden.allPlots[c.y][c.x].addMod(mod);
         }
     }
 }
