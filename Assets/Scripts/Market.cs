@@ -16,7 +16,7 @@ public struct FuturePacket
 
 public class Market : MonoBehaviour
 {
-    [SerializeField] private int slots = 3;
+    [SerializeField] public int slots = 3;
     [SerializeField] private GameObject selectorPrefab;
     [SerializeField] private GameObject lockerPrefab;
     public List<PlantList> stagePlants;
@@ -122,14 +122,16 @@ public class Market : MonoBehaviour
     }
 
 
-    public Plant GetPlant(bool view = false)
+    public Plant GetPlant(bool view = false, int reselectSlot = -1)
     {
-        if (selectedSlot < 0 || !cMarket[selectedSlot]) return null;
-        var plant = cMarket[selectedSlot].plant;
+        int chosenSlot = selectedSlot;
+        if (reselectSlot >= 0) chosenSlot = reselectSlot;
+        if (chosenSlot < 0 || !cMarket[chosenSlot]) return null;
+        var plant = cMarket[chosenSlot].plant;
         if (!view)
         {
-            Destroy(cMarket[selectedSlot].gameObject);
-            selectPlant(-1);
+            Destroy(cMarket[chosenSlot].gameObject);
+            if (reselectSlot == -1) selectPlant(-1);
         }
         return plant;
     }
@@ -197,6 +199,11 @@ public class Market : MonoBehaviour
     public void removePlantList(int index)
     {
         stagePlants.RemoveAt(index);
+    }
+
+    public List<Packet> GetPackets()
+    {
+        return cMarket;
     }
 
     // Update is called once per frame

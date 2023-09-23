@@ -102,7 +102,7 @@ MonoBehaviour:
   maxTurns: 15
   currentTurns: 0
   reward: 3
-  destructible: 1
+  destructible: 0
   infoPrefab: {fileID: 0}
   icon: {fileID: 21300000, guid: 932e432daf1015d4bb42b06de43bcebc, type: 3}
   allSprites:
